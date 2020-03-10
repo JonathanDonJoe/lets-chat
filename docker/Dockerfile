@@ -29,7 +29,6 @@ RUN tar -xzvf master.tar.gz \
 &&  rm -rf lets-chat-master
 
 RUN (groups node || groupadd -r node) \
-&&  useradd -r -g node node \	
 &&  (id node || useradd -r -g node node ) \
 &&  chown node:node uploads \
 &&  mkdir -p builtAssets \
